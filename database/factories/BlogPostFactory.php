@@ -18,6 +18,7 @@ class BlogPostFactory extends Factory
     public function definition(): array
     {
         $title = $this->faker->sentence(rand(3, 8), true);
+        
         $txt = $this->faker->realText(rand(1000, 4000));
         $date = $this->faker->dateTimeBetween('-3 months', '-2 months');
 
